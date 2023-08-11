@@ -2,11 +2,14 @@ import streamlit as st
 import ephem
 from datetime import datetime
 import pytz
-import openpyxl
+
 try:
     import openpyxl
 except ImportError:
     subprocess.run(["pip", "install", "openpyxl"])
+    
+import openpyxl
+
 
 # Function to calculate azimuth and elevation angles
 def calculate_angles(latitude, longitude, date, time):
