@@ -3,7 +3,6 @@ import pandas as pd
 import ephem
 from datetime import datetime
 import pytz
-import openpyxl
 from io import BytesIO
 
 # Function to calculate azimuth and elevation angles
