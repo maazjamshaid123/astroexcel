@@ -3,14 +3,6 @@ import ephem
 from datetime import datetime
 import pytz
 
-try:
-    import openpyxl
-except ImportError:
-    subprocess.run(["pip", "install", "openpyxl"])
-    
-import openpyxl
-
-
 # Function to calculate azimuth and elevation angles
 def calculate_angles(latitude, longitude, date, time):
     # Combine the provided date and time
